@@ -8,15 +8,218 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge"> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
 
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800"> 
         <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
         <link rel="stylesheet" href="css/main.css">
     </head> 
 
     <body>
 
-        
 
+
+
+        <header>
+            <div class="wrapper">
+
+                <nav>
+                    <a href="#" class="logo">
+                        <div class="name">HouseVOP</div>
+                        <div class="desc">жилой комплекс</div>
+                    </a>
+                    <ul class="nav-list">
+                        <li><a href="#">О комплексе</a></li>
+                        <li><a href="#">Район</a></li>
+                        <li><a href="#">Каталог квартир</a></li>
+                        <li><a href="#">Ипотека</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+
+                <h1 class="main-h">Жилой комплекс<br> в историческом центре</h1>
+
+                <img src="img/mouse.png" alt="" class="mouse-scroll-img">
+
+                <div class="header-info-line">
+                    <a href="#">Наб. реки Фонтанки 10-15</a>
+                    <a href="#">8 (812) 123-45-67</a>
+                </div>
+            </div>
+        </header>
+
+
+
+
+        <div class="characteristics">
+            <div class="block">
+                <img src="img/icon-bench.png" alt="">
+                <p>Рядом исторические парки и скверы</p>
+            </div>
+            <div class="block">
+                <img src="img/icon-building.png" alt="">
+                <p>Полностью обустроенный</p>
+            </div>
+            <div class="block">
+                <img src="img/icon-fountain.png" alt="">
+                <p>10 фонтанов<br> на территории</p>
+            </div>
+            <div class="block">
+                <img src="img/icon-bicycle.png" alt="">
+                <p>6 км<br> велодорожек</p>
+            </div>
+        </div>
+
+
+
+
+        <div class="container appartments">
+            <div class="row">
+                <h2 class="block-name">Наши квартиры</h2>
+                <div class="col-md-6 block">
+                    <a href="#">
+                        <img src="img/our-flt-1.jpg" alt="">
+                        <p class="loft-name">Лофт - 3 этажа</p>
+                    </a>
+                </div>
+                <div class="col-md-6 block">
+                    <a href="#">
+                        <img src="img/our-flt-2.jpg" alt="">
+                        <p class="loft-name">Лофт - 2 этажа</p>
+                    </a>
+                </div>
+                <div class="col-md-6 mt-md-4 block">
+                    <a href="#">
+                        <img src="img/our-flt-1.jpg" alt="">
+                        <p class="loft-name">Лофт - 3 этажа</p>
+                    </a>
+                </div>
+                <div class="col-md-6 mt-md-4 block">
+                    <a href="#">
+                        <img src="img/our-flt-2.jpg" alt="">
+                        <p class="loft-name">Лофт - 2 этажа</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="wrapper-whatnWhath">
+            <div class="container whantWatch">
+                <div class="row">
+                    <h2 class="block-name">Хотите посмотреть?</h2>
+                    <div class="col-md-6">
+                        <p class="formText">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <form action="">
+                            <fieldset class="field-top">
+                                <p><input type="text" id="name" placeholder="Ваше имя" required></p>
+                                <p><input type="email" id="email" placeholder="Ваш телефон" required></p>
+                            </fieldset>
+                            <div class="field-bottom">
+                                <p class="form-desc">*Мы никому не передаем ваши данные. И не сохраняем ваш номер в базу.</p>
+                                <p><input type="submit" value="Посмотреть район" class="form-button"></p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="video">
+            <video src="" poster="img/video-bg.jpg">
+                
+            </video>
+            <div class="video-button">
+                <img src="img/video-play-button.png" alt="">
+            </div>
+        </div>
         <script src="js/main.min.js"></script>
-    </body> 
+
+
+
+
+        <div class="container mapBlock">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="block-name">Район на карте</h2>
+                    <div id="map"></div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="container second-form">
+            <div class="row">
+                <h2 class="block-name">Есть вопросы?</h2>
+                <div class="col-md-12">
+                    <form action="" class="second-form-block">
+                        <p>*Мы никому не передаем ваши данные. И не сохраняем ваш номер в базу</p>
+                        <p><input type="text" id="name" placeholder="Ваше имя" required></p>
+                        <p><input type="text" id="name" placeholder="Ваш телефон" required></p>
+                        <p><input type="submit" id="name" placeholder="Посмотреть район" class="form-button"></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <a href="#" class="logo">
+                            <div class="name">HouseVOP</div>
+                            <div class="desc">жилой комплекс</div>
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <ul>
+                            <li><a href="#">О комплексе</a></li>
+                            <li><a href="#">Район</a></li>
+                            <li><a href="#">Каталог квартир</a></li>
+                            <li><a href="#">Ипотека</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <ul>
+                            <li><a href="#">О комплексе</a></li>
+                            <li><a href="#">Район</a></li>
+                            <li><a href="#">Каталог квартир</a></li>
+                            <li><a href="#">Ипотека</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <ul>
+                            <li><a href="#">Адрес: Наб. реки Фонтанки 10-15</a></li>
+                            <li><a href="#">Телефон: 8 (812) 123-45-67</a></li>
+                            <li><a href="#">Отдел продаж: 10:00 - 20:00</a></li>
+                            <li><a href="#">E-mail: <span class="footer-email">vip@housevip.ru</span></a></li>
+                        </ul>
+                        <ul class="sotials-icons">
+                            <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-vk" aria-hidden="true"></i></i></a></li>
+                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+
+
+        <script src="http://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU" type="text/javascript"></script>
+        <script src="myJs/main.js"></script>
+    </body>
+
 </html>

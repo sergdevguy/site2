@@ -122,8 +122,8 @@ function jsBuild(){
          //.pipe(sourcemaps.init())
          .pipe(uglify())
          //.pipe(sourcemaps.write('./'))
-         .pipe(rename('main.min.js'))
-         .pipe(dest('assets/src/js'))
+         //.pipe(rename('main.min.js'))
+         .pipe(dest('assets/src/myJs'))
          .pipe(webserver.reload({stream: true}));
 };
 
@@ -173,7 +173,7 @@ function takeFile(from, to){
 function moveFile(cb){
   takeFile(path.src.html, path.build.html);
   takeFile('assets/src/css/main.css', path.build.css);
-  takeFile('assets/src/js/main.min.js', path.build.js);
+  takeFile('assets/src/myJs/main.js', path.build.js);
   takeFile(path.src.img, path.build.img);
   takeFile(path.src.fonts, path.build.fonts);
   cb();
