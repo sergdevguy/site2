@@ -9,7 +9,8 @@
 // font-weight helper.
 // ________
 // 100 Extra Light or Ultra Light;
-// 200 Light or Thin; 300 Book or Demi;
+// 200 Light or Thin; 
+// 300 Book or Demi;
 // 400 Regular or Normal;
 // 500 Medium;
 // 600 Semibold or Demibold;
@@ -40,5 +41,7 @@
 
 
 
-// Test font, uncomment and rewrite this!
-// @include font('Font name', 'Font-name', normal, 400, '../fonts/font/');
+@include font('playfair-display', 'playfair display', normal, 400, '../fonts/font/');
+@include font('postnobillsjaffna-semibold', 'postnobillsjaffna semibold', normal, 600, '../fonts/font/');
+@include font('ralewayregular', 'Fraleway-regular', normal, 400, '../fonts/font/');
+@include font('Roboto', 'Roboto_', normal, 400, '../fonts/font/');
