@@ -25,12 +25,13 @@
                         <div class="name">HouseVOP</div>
                         <div class="desc">жилой комплекс</div>
                     </a>
-                    <ul class="nav-list">
-                        <li><a href="#">О комплексе</a></li>
-                        <li><a href="#">Район</a></li>
-                        <li><a href="#">Каталог квартир</a></li>
-                        <li><a href="#">Ипотека</a></li>
-                        <li><a href="#">Контакты</a></li>
+                    <div class="nav-button">меню</div>
+                    <ul class="toggle-menu">
+                        <li><a href="#" class="toggle-menu__item">О комплексе</a></li>
+                        <li><a href="#" class="toggle-menu__item">Район</a></li>
+                        <li><a href="#" class="toggle-menu__item">Каталог квартир</a></li>
+                        <li><a href="#" class="toggle-menu__item">Ипотека</a></li>
+                        <li><a href="#" class="toggle-menu__item">Контакты</a></li>
                     </ul>
                 </nav>
 
@@ -39,9 +40,10 @@
                 <img src="img/mouse.png" alt="" class="mouse-scroll-img">
 
                 <div class="header-info-line">
-                    <a href="#">Наб. реки Фонтанки 10-15</a>
-                    <a href="#">8 (812) 123-45-67</a>
+                    <p>Наб. реки Фонтанки 10-15</p>
+                    <a href="tel:88121234567">8 (812) 123-45-67</a>
                 </div>
+
             </div>
         </header>
 
@@ -79,19 +81,19 @@
                         <p class="loft-name">Лофт - 3 этажа</p>
                     </a>
                 </div>
-                <div class="col-md-6 block">
+                <div class="col-md-6 mt-4 mt-md-0 block">
                     <a href="#">
                         <img src="img/our-flt-2.jpg" alt="">
                         <p class="loft-name">Лофт - 2 этажа</p>
                     </a>
                 </div>
-                <div class="col-md-6 mt-md-4 block">
+                <div class="col-md-6 mt-4 mt-md-4 block">
                     <a href="#">
                         <img src="img/our-flt-1.jpg" alt="">
                         <p class="loft-name">Лофт - 3 этажа</p>
                     </a>
                 </div>
-                <div class="col-md-6 mt-md-4 block">
+                <div class="col-md-6 mt-4 mt-md-4 block">
                     <a href="#">
                         <img src="img/our-flt-2.jpg" alt="">
                         <p class="loft-name">Лофт - 2 этажа</p>
@@ -102,18 +104,19 @@
 
 
 
+
         <div class="wrapper-whatnWhath">
             <div class="container whantWatch">
                 <div class="row">
                     <h2 class="block-name">Хотите посмотреть?</h2>
                     <div class="col-md-6">
-                        <p class="formText">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.</p>
+                        <p class="formText">Вы можете получить фотографии, планы наших квартир и другую полезную информация заполнив форму. Так же в письме будут все контакты для связи с нашими менеджерами, которые всегда готовы ответить на все ваши вопросы и помочь с выбором.</p>
                     </div>
                     <div class="col-md-6">
                         <form action="">
                             <fieldset class="field-top">
                                 <p><input type="text" id="name" placeholder="Ваше имя" required></p>
-                                <p><input type="email" id="email" placeholder="Ваш телефон" required></p>
+                                <p><input type="email" id="email" placeholder="Ваша почта" required></p>
                             </fieldset>
                             <div class="field-bottom">
                                 <p class="form-desc">*Мы никому не передаем ваши данные. И не сохраняем ваш номер в базу.</p>
@@ -173,13 +176,22 @@
         <footer>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-lg-3 col-sm-6">
                         <a href="#" class="logo">
                             <div class="name">HouseVOP</div>
                             <div class="desc">жилой комплекс</div>
                         </a>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-lg-3 mt-5 mt-sm-0 col-sm-6">
+                        <ul>
+                            <li><a href="#">Наши особенности</a></li>
+                            <li><a href="#">Наши квартиры</a></li>
+                            <li><a href="#">Получить инфо.</a></li>
+                            <li><a href="#">Презентация</a></li>
+                            <li><a href="#">Мы на карте</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 mt-4 mt-sm-5 mt-lg-0 col-sm-6">
                         <ul>
                             <li><a href="#">О комплексе</a></li>
                             <li><a href="#">Район</a></li>
@@ -188,21 +200,12 @@
                             <li><a href="#">Контакты</a></li>
                         </ul>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-lg-3 mt-4 mt-sm-5 mt-lg-0 col-sm-6">
                         <ul>
-                            <li><a href="#">О комплексе</a></li>
-                            <li><a href="#">Район</a></li>
-                            <li><a href="#">Каталог квартир</a></li>
-                            <li><a href="#">Ипотека</a></li>
-                            <li><a href="#">Контакты</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-3">
-                        <ul>
-                            <li><a href="#">Адрес: Наб. реки Фонтанки 10-15</a></li>
-                            <li><a href="#">Телефон: 8 (812) 123-45-67</a></li>
-                            <li><a href="#">Отдел продаж: 10:00 - 20:00</a></li>
-                            <li><a href="#">E-mail: <span class="footer-email">vip@housevip.ru</span></a></li>
+                            <li><p>Адрес: Наб. реки Фонтанки 10-15</p></li>
+                            <li><a href="tel:88121234567">Телефон: 8 (812) 123-45-67</a></li>
+                            <li><p>Отдел продаж: 10:00 - 20:00</p></li>
+                            <li><a href="mailto:vip@housevip.ru">E-mail: <span class="footer-email">vip@housevip.ru</span></a></li>
                         </ul>
                         <ul class="sotials-icons">
                             <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
