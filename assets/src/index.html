@@ -37,7 +37,14 @@
 
                 <h1 class="main-h">Жилой комплекс<br> в историческом центре</h1>
 
-                <img src="img/mouse.png" alt="" class="mouse-scroll-img">
+                <!--<img src="img/mouse.png" alt="" class="mouse-scroll-img">-->
+                <svg id="header-mouse-scroll" width="24" height="40">
+                    <rect x="2" y="2" width="20" height="36" rx="10" ry="10" style="fill:none; stroke-width:2; stroke: #D4C17F"/>
+                    <line id="animated-elem" x1="12" y1="8" x2="12" y2="16" style="stroke:#D4C17F;stroke-width:2">
+                        <animate attributeName="y1" from="8" to="11" dur=".8s" repeatCount="indefinite"/>
+                        <animate attributeName="y2" from="16" to="19" dur=".8s" repeatCount="indefinite"/> 
+                    </line>
+                 </svg>
 
                 <div class="header-info-line">
                     <p>Наб. реки Фонтанки 10-15</p>
@@ -50,7 +57,7 @@
 
 
 
-        <div class="characteristics">
+        <div class="characteristics" id="prop">
             <div class="block">
                 <img src="img/icon-bench.png" alt="">
                 <p>Рядом исторические парки и скверы</p>
@@ -72,7 +79,7 @@
 
 
 
-        <div class="container appartments">
+        <div class="container appartments" id="flats">
             <div class="row">
                 <h2 class="block-name">Наши квартиры</h2>
                 <div class="col-md-6 block">
@@ -105,7 +112,7 @@
 
 
 
-        <div class="wrapper-whatnWhath">
+        <div class="wrapper-whatnWhath" id="info">
             <div class="container whantWatch">
                 <div class="row">
                     <h2 class="block-name">Хотите посмотреть?</h2>
@@ -131,7 +138,7 @@
 
 
 
-        <div class="video">
+        <div class="video" id="present">
             <video src="" poster="img/video-bg.jpg">
                 
             </video>
@@ -139,12 +146,11 @@
                 <img src="img/video-play-button.png" alt="">
             </div>
         </div>
-        <script src="js/main.min.js"></script>
 
 
 
 
-        <div class="container mapBlock">
+        <div class="container mapBlock" id="onMap">
             <div class="row">
                 <div class="col-md-12">
                     <h2 class="block-name">Район на карте</h2>
@@ -184,11 +190,11 @@
                     </div>
                     <div class="col-lg-3 mt-5 mt-sm-0 col-sm-6">
                         <ul>
-                            <li><a href="#">Наши особенности</a></li>
-                            <li><a href="#">Наши квартиры</a></li>
-                            <li><a href="#">Получить инфо.</a></li>
-                            <li><a href="#">Презентация</a></li>
-                            <li><a href="#">Мы на карте</a></li>
+                            <li><a data-scroll href="#prop">Наши особенности</a></li>
+                            <li><a data-scroll href="#flats">Наши квартиры</a></li>
+                            <li><a data-scroll href="#info">Получить инфо.</a></li>
+                            <li><a data-scroll href="#present">Презентация</a></li>
+                            <li><a data-scroll href="#onMap">Мы на карте</a></li>
                         </ul>
                     </div>
                     <div class="col-lg-3 mt-4 mt-sm-5 mt-lg-0 col-sm-6">

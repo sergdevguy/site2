@@ -6,5 +6,8 @@
 // Import needed js-files from Bootstrap 4
 //= ../../../node_modules/bootstrap/js/dist/carousel.js
  
+// Smooth-scroll
+//= ../../../node_modules/smooth-scroll/dist/smooth-scroll.js
+
 // Import my own js
 //= my.js
