@@ -136,8 +136,15 @@ $( document ).ready(function() {
 
 
 
+  // АПАРТМЕНТ
+
+  // Показываем/скрываем картинку этажа апартмента
   $(".appartments .block").click(function(){
-    $(this).children(".appart-container").css("display", "flex");
+    if($(this).children(".appart-container").css("display") == "flex"){
+      $(this).children(".appart-container").css("display", "none");
+    } else{
+      $(this).children(".appart-container").css("display", "flex");
+    }
   });
 
 

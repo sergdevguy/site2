@@ -72,6 +72,19 @@ input{
     margin-bottom: 200px;
 }
 
+.bigChar{
+    position: absolute;
+    right: 3%;
+    top: -30px;
+    font-family: playfair-display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 400px;
+    line-height: 533px;
+    opacity: .02;
+    overflow: hidden;
+}
+
 
 
 
@@ -212,6 +225,7 @@ header{
 
 
 .characteristics{
+    position: relative;
     display: flex;
     justify-content: center;
     padding: 60px 0 120px 0;
@@ -232,6 +246,11 @@ header{
 
 
 .appartments{
+    position: relative;
+
+    .bigChar{
+        left: -16%;
+    }
 
     .block{
         position: relative;
@@ -264,8 +283,33 @@ header{
         justify-content: center;
         z-index: 100;
 
-        .appart-img{
+        .img-container{
             width: 700px;
+            padding: 0 15px;
+            position: relative;
+
+            .close-button{
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 78px;
+                height: 78px;
+                font-size: 50px;
+                background-color: $firmColor;
+                border-radius: 50% 0 50% 50%;
+                cursor: pointer;
+                padding: 0 10px 12px 28px;
+                z-index: 200;
+                margin-right: 15px;
+
+                &:hover{
+                    opacity: .7;
+                }
+            }
+        }
+
+        .appart-img{
+            width: 100%;
         }
     }
 
@@ -355,6 +399,9 @@ header{
 
 
 
+.video-wrapper{
+    position: relative;
+}
 .video{
     position: relative;
     display: flex;
@@ -362,6 +409,13 @@ header{
     align-items: center;
     max-width: 719px;
     margin: 0 auto;
+
+    .bigChar{
+        left: none;
+        right: -50%;
+        top: -70px;
+        position: absolute;
+    }
 
     .video-button{
         position: absolute;
@@ -385,6 +439,12 @@ header{
 
 
 .mapBlock{
+    position: relative;
+
+    .bigChar{
+        top: 150px;
+        left: -11%;
+    }
 
     .block-name{
         margin-top: 180px;
