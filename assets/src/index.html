@@ -27,17 +27,16 @@
                     </a>
                     <div class="nav-button">меню</div>
                     <ul class="toggle-menu">
-                        <li><a href="#" class="toggle-menu__item">О комплексе</a></li>
-                        <li><a href="#" class="toggle-menu__item">Район</a></li>
-                        <li><a href="#" class="toggle-menu__item">Каталог квартир</a></li>
-                        <li><a href="#" class="toggle-menu__item">Ипотека</a></li>
-                        <li><a href="#" class="toggle-menu__item">Контакты</a></li>
+                        <li><a href="error-page.html" target="_blank" class="toggle-menu__item">О комплексе</a></li>
+                        <li><a href="error-page.html" target="_blank" class="toggle-menu__item">Район</a></li>
+                        <li><a href="error-page.html" target="_blank" class="toggle-menu__item">Каталог квартир</a></li>
+                        <li><a href="error-page.html" target="_blank" class="toggle-menu__item">Ипотека</a></li>
+                        <li><a href="error-page.html" target="_blank" class="toggle-menu__item">Контакты</a></li>
                     </ul>
                 </nav>
 
                 <h1 class="main-h">Жилой комплекс<br> в историческом центре</h1>
 
-                <!--<img src="img/mouse.png" alt="" class="mouse-scroll-img">-->
                 <svg id="header-mouse-scroll" width="24" height="40">
                     <rect x="2" y="2" width="20" height="36" rx="10" ry="10" style="fill:none; stroke-width:2; stroke: #D4C17F"/>
                     <line id="animated-elem" x1="12" y1="8" x2="12" y2="16" style="stroke:#D4C17F;stroke-width:2">
@@ -83,28 +82,32 @@
             <div class="row">
                 <h2 class="block-name">Наши квартиры</h2>
                 <div class="col-md-6 block">
-                    <a href="#">
-                        <img src="img/our-flt-1.jpg" alt="">
-                        <p class="loft-name">Лофт - 3 этажа</p>
-                    </a>
+                    <img src="img/our-flt-1.jpg" alt="">
+                    <p class="loft-name">Лофт - 3 этажа</p>
+                    <div class="appart-container">
+                        <img class="appart-img" src="img/plan1.jpg" alt="">
+                    </div>
                 </div>
                 <div class="col-md-6 mt-4 mt-md-0 block">
-                    <a href="#">
-                        <img src="img/our-flt-2.jpg" alt="">
-                        <p class="loft-name">Лофт - 2 этажа</p>
-                    </a>
+                    <img src="img/our-flt-2.jpg" alt="">
+                    <p class="loft-name">Лофт - 2 этажа</p>
+                    <div class="appart-container">
+                        <img class="appart-img" src="img/plan2.png" alt="">
+                    </div>
                 </div>
                 <div class="col-md-6 mt-4 mt-md-4 block">
-                    <a href="#">
-                        <img src="img/our-flt-1.jpg" alt="">
-                        <p class="loft-name">Лофт - 3 этажа</p>
-                    </a>
+                    <img src="img/our-flt-1.jpg" alt="">
+                    <p class="loft-name">Лофт - 3 этажа</p>
+                    <div class="appart-container">
+                        <img class="appart-img" src="img/plan3.jpg" alt="">
+                    </div>
                 </div>
                 <div class="col-md-6 mt-4 mt-md-4 block">
-                    <a href="#">
-                        <img src="img/our-flt-2.jpg" alt="">
-                        <p class="loft-name">Лофт - 2 этажа</p>
-                    </a>
+                    <img src="img/our-flt-2.jpg" alt="">
+                    <p class="loft-name">Лофт - 2 этажа</p>
+                    <div class="appart-container">
+                        <img class="appart-img" src="img/plan4.jpeg" alt="">
+                    </div>
                 </div>
             </div>
         </div>
@@ -139,12 +142,11 @@
 
 
         <div class="video" id="present">
-            <video src="" poster="img/video-bg.jpg">
-                
+            <div class="video-button" id="video-button"></div>
+            <video poster="img/video-bg.jpg" id="video">
+                <source src="img/video.mp4" type="video/mp4">
+                <source src="img/video.webm" type="video/webm">
             </video>
-            <div class="video-button">
-                <img src="img/video-play-button.png" alt="">
-            </div>
         </div>
 
 
@@ -199,11 +201,11 @@
                     </div>
                     <div class="col-lg-3 mt-4 mt-sm-5 mt-lg-0 col-sm-6">
                         <ul>
-                            <li><a href="#">О комплексе</a></li>
-                            <li><a href="#">Район</a></li>
-                            <li><a href="#">Каталог квартир</a></li>
-                            <li><a href="#">Ипотека</a></li>
-                            <li><a href="#">Контакты</a></li>
+                            <li><a href="error-page.html" target="_blank">О комплексе</a></li>
+                            <li><a href="error-page.html" target="_blank">Район</a></li>
+                            <li><a href="error-page.html" target="_blank">Каталог квартир</a></li>
+                            <li><a href="error-page.html" target="_blank">Ипотека</a></li>
+                            <li><a href="error-page.html" target="_blank">Контакты</a></li>
                         </ul>
                     </div>
                     <div class="col-lg-3 mt-4 mt-sm-5 mt-lg-0 col-sm-6">
@@ -214,10 +216,10 @@
                             <li><a href="mailto:vip@housevip.ru">E-mail: <span class="footer-email">vip@housevip.ru</span></a></li>
                         </ul>
                         <ul class="sotials-icons">
-                            <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fa fa-vk" aria-hidden="true"></i></i></a></li>
-                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></i></a></li>
-                            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                            <li><a href="https://www.youtube.com" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                            <li><a href="https://vk.com" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+                            <li><a href="https://ru-ru.facebook.com" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
                         </ul>
                     </div>
                 </div>

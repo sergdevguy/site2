@@ -1,17 +1,25 @@
 $( document ).ready(function() {
 
-    // Яндекс карта
+
+
+
+    // ----------
+    // YANDEX MAP
+    // ----------
+
     var myMap;
     var marker;
-    ymaps.ready(init); // Ожидание загрузки API с сервера Яндекса
+
+    ymaps.ready(init); // Waiting loading API from Yandex server
+
     function init () {
         myMap = new ymaps.Map("map", {
-            center: [55.76, 37.64], // Координаты центра карты
-            zoom: 16 // Zoom
+            center: [55.76, 37.64], // Сoordinate center of map
+            zoom: 16 // Map zoom
         });
         marker = new ymaps.Placemark([55.76, 37.64], {
-            hintContent: 'Расположение',
-            balloonContent: 'Вход за поворотом'
+            hintContent: 'Расположение', // text when cursor on marker
+            balloonContent: 'Вход за поворотом' // text when click on marker
         });
         myMap.geoObjects.add(marker);
     }
@@ -71,21 +79,21 @@ $( document ).ready(function() {
 
 
 
-      /* Кнопка навигации по сайту
-      _________________________________________________________
-      _________________________________________________________
-      _________________________________________________________
-      */
+  /* Кнопка навигации по сайту
+  _________________________________________________________
+  _________________________________________________________
+  _________________________________________________________
+  */
 
-      // Открываем и закрываем меню по нажатию на кнопку меню
-      $(".nav-button").click(function(){
-        if($(".toggle-menu").css('display') == 'none'){
-          $(".toggle-menu").css("display", "flex");
-          $(".toggle-menu").addClass('animated slideInDown');
-        } else{
-          $(".toggle-menu").css("display", "none");
-        }
-      });
+  // Открываем и закрываем меню по нажатию на кнопку меню
+  $(".nav-button").click(function(){
+    if($(".toggle-menu").css('display') == 'none'){
+      $(".toggle-menu").css("display", "flex");
+      $(".toggle-menu").addClass('animated slideInDown');
+    } else{
+      $(".toggle-menu").css("display", "none");
+    }
+  });
 
 
 
@@ -93,9 +101,43 @@ $( document ).ready(function() {
   // SMOOTH-SCROLL
   // -------------
   // All animations will take exactly 500ms
+
   var scroll = new SmoothScroll('a[href*="#"]', {
     speed: 500,
     speedAsDuration: true
+  });
+
+
+
+
+  // VIDEO PLAY AND BUTTON
+
+  var overlay = document.getElementById('video-button');
+  var vid = document.getElementById('video');
+
+  if(overlay.addEventListener){
+      overlay.addEventListener("click", play, false)
+    }else if(overlay.attachEvent){
+      overlay.attachEvent("onclick", play)
+    }
+
+  function play() { 
+      if (vid.paused){
+          vid.play(); 
+          overlay.style.opacity = "0";
+          overlay.style.display = "none";
+          vid.setAttribute("controls", "controls");
+
+      }else {
+          vid.pause();
+      }
+  }
+
+
+
+
+  $(".appartments .block").click(function(){
+    $(this).children(".appart-container").css("display", "flex");
   });
 
 
