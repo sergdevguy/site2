@@ -89,12 +89,29 @@ $( document ).ready(function() {
   $(".nav-button").click(function(){
     if($(".toggle-menu").css('display') == 'none'){
       $(".toggle-menu").css("display", "flex");
+      $(".toggle-menu").css("opacity", "1");
       $(".toggle-menu").addClass('animated slideInDown');
+      $(".bottom-hidder").css("display", "block");
+      $(".bottom-hidder").css("opacity", "1");
+      $(".bottom-hidder").addClass('animated slideInUp');
     } else{
-      $(".toggle-menu").css("display", "none");
+      $(".toggle-menu, .bottom-hidder").animate({
+        opacity: 0,
+      }, 500, function() {
+        $(".toggle-menu, .bottom-hidder").css("display", "none");
+      });
     }
   });
 
+  // Отображаем кнопку "меню" если она скрыта после изменения размера окна
+  $(window).resize(function(){
+    var w = $(window).width();
+    if(w > 850 && $(".toggle-menu").css("display") == "none") {
+      $(".toggle-menu").css("display", "flex");
+      $(".toggle-menu").css("opacity", "1");
+    }
+  });
+    
 
 
 

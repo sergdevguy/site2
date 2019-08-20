@@ -85,6 +85,17 @@ input{
     overflow: hidden;
 }
 
+.bottom-hidder{
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: $bg;
+    z-index: 50;
+}
+
 
 
 
@@ -124,6 +135,7 @@ header{
                 letter-spacing: 0.05em;
                 margin-left: 40px;
             }
+
         }
     }
 
@@ -174,7 +186,6 @@ header{
         position: fixed;
         top: 0;
         left: 0;
-        //display: inline-flex;
         display: none;
         flex-direction: column;
         justify-content: center;
